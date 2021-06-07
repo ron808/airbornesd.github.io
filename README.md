@@ -1,2 +1,2 @@
 # Blogsite
-Tried making a homepage for the website portfolio.
+homepage for the website portfolio.
