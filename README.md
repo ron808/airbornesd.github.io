@@ -1,2 +1,2 @@
 # Blogsite
-homepage for the website portfolio.
+homepage of website portfolio.
