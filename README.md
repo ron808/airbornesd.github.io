@@ -1,2 +1,2 @@
 # Blogsite
-homepage of website portfolio
+Homepage of website 
