@@ -18,7 +18,7 @@
 <br>
 
 ## Ideas for contributions
-- Style the index.html
+- You can also add just one file like: index.html
 - Add your own projects to the 'helpful-resources'
 - Add helpful links/guides to the 'helpful-resources'
 

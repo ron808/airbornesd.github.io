@@ -1,5 +1,5 @@
 
 # **Contributors**
 - [Yash Chaudhary](https://github.com/busybee23)
-- [Siddharth Chaudhary](https://github.com/airbornesd)
+- [Siddharth Chaudhary](https://github.com/bndtk)
 - [Vivek Chaudhary](https://github.com/vivekchaudhary404)
