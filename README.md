@@ -1,3 +1,2 @@
 # Blogsite
-Homepage of website 
-Mentor : Mayank Maurya
+Homepage of website
