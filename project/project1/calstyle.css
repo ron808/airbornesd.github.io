@@ -1,0 +1,82 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+}
+*:hover
+{
+    cursor: not-allowed;
+}
+#main
+{
+    border: 3px solid grey;
+    margin: 25px 390px;
+    /* margin: 30px;
+    margin-top: 50px;
+    margin-right: 430px;
+    margin-left: 350px;
+    margin-bottom: 50px; */
+}
+/* dis
+{
+    border: 1px solid slategrey;
+    background-color: darkgray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+} */
+div
+{
+    background-color: rgb(31, 30, 30);
+    color: white;
+    height:50px;
+    width: 50px;
+    margin:3px;
+    display: inline-block;
+}
+.button
+{
+    /* margin-left: 0.5px; */
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 0;
+    padding: 10px;
+    padding-left: 95px;
+    padding-right: 95px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    /* margin-left: 15px;    */
+}
+.button:hover{
+    background-color: rgba(81, 84, 87, 0.6);
+    cursor: pointer;
+}
+.display
+{
+    background-color: darkgray;
+    padding: 40px;
+    text-align: center;
+    font-size: 70px;
+    margin: 30px;
+    font-weight: 600;
+    color: rgb(0, 8, 15);
+    /* padding-right: -40px; */
+}
+.display:hover
+{
+    cursor: not-allowed;
+}
+.equal
+{
+    background-color: rgb(36, 44, 114);
+}
+.equal:hover
+{
+    background-color: rgba(101, 111, 197, 0.2);
+    
+}
+.clear
+{
+    margin-top: 10px;
+}
