@@ -66,6 +66,55 @@ li {
 li a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: #FF0000;
   font-family: 'Open Sans', sans-serif;
+}
+
+.navbar{
+
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+nav{
+
+  flex: 1;
+  text-align: right;
+}
+
+nav ul{
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(3, 22, 37);
+}
+
+.handle{
+  background-color:transparent;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin: 5px 10px;
+  font-size: 1.20em;
+  font-weight: bold;
+}
+
+
+.handle a:hover{
+  background-color: rgba(255, 255, 255, 0.959);
+  border-radius: 20px;
+
+}
+
+.handle a i{
+  margin: 5px;
 }
