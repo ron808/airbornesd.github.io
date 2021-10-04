@@ -1,26 +1,70 @@
 body {
     background-color: #CAF7E3;
+    font-family: sans-serif;
   }
   
-  hr {
-  
+hr {
   border-style: none;
   border-top-style: dotted;
   border-color: grey;
   border-width: 5px;
-    width: 5%;
-  }
-  h1 {
-    color: #0A81AB;
-  }
-  h3 {
-    color: #0A81AB;
-  }
+  width: 5%;
+}
+h1 {
+  color: #0A81AB;
+}
+h3 {
+  color: #0A81AB;
+}
   
   
-   td {
-     font-size: 13px;
-   }
-   li {
-     font-size: 13px;
-   }
+td {
+  font-size: 13px;
+}
+li {
+  font-size: 13px;
+}
+
+.per_img,.per_info h1,.intro p,.intro h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.icons a{
+  font-size: 28px;
+  margin-right: 22px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 7px;
+}
+.intro{
+  position: relative;
+  align-items: center;
+  margin: 10px;
+  font-size: large;
+}
+.description{
+  margin: 28px 50px;
+  font-size: larger;
+}
+.common{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.common h3{
+  font-size: 20px;
+}
+.common li,.common td{
+  font-size: larger;
+}
+.experience li,.experience td{
+  font-size: large;
+}
