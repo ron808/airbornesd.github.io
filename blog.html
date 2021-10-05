@@ -1,7 +1,9 @@
 <DOCTYPE! html>
-<html>
+<html lang="en">
 <head>
-
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>assignment</title>
 <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -12,17 +14,36 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <style>
 body{
+          margin: 0;
+  box-sizing: border-box;
+ overflow-x: hidden;
+max-width:100%;
+overflow-y:visible;
+  list-style:none;
 
-background-color : #494848;
+background-image: linear-gradient(to top left,rgb(220,20,60),rgb(255,165,0));
 color : whitesmoke ; 
+}
+.tech img{
+margin-left:500px;
+margin-right:-100px;
 }
 header{ 
 background-color : #ff9595;
+text-align: center;
+height:150px;
+
+}
+
+img{
+          border-radius:50px;
+          margin-right:5px;
 }
 
 img#ano{
     width: 64px;
     margin: 10px;
+   
 }
 
 h3{
@@ -32,8 +53,10 @@ h3{
 }
 
 h1 {
-margin: 10px;
-color:#ff7b7b;
+margin-top:-25px;
+color:#ebe1e1;
+text-align: center;
+font-size:5rem;
 }
 
 div.div{
@@ -44,6 +67,8 @@ border: 1px solid grey;
     font-size: 16px;
     color: black;
     font-weight: bold;
+    border-radius:20px;
+    text-align: center;
 }
 
 p{
@@ -53,7 +78,9 @@ font-size: 19px;
 table,th,td{
  border : 2px solid #ff7b7b ; 
 border-collapse : collapse ;  
-    font-size: 17px;
+    font-size: 50px;
+    margin-left:200px;
+    text-align: center;
 }
 
 .card {
@@ -68,6 +95,10 @@ border-collapse : collapse ;
     color: whitesmoke;
 
 }
+dt{
+          margin-left:100px;
+          font-size:20px;
+}
 </style>
 </head>
 <body>
@@ -81,7 +112,7 @@ border-collapse : collapse ;
  
 
 <h1>Welcome To My Portfolio Website !!</h1>
-<div style="float: right ; width: 615px; height: 432px; border: 2px solid black">
+<div style="float: right ; width: 615px; height: 432px;">
 
 <img src="https://media.sproutsocial.com/uploads/2017/11/Social-Media-Ideas.png" alt="map" usemap="#media" style=" width: 615px; height: 432px;">
 <map name="media">
@@ -109,7 +140,7 @@ border-collapse : collapse ;
 </div>
 
 <hr>
-<div>
+<div class="tech">
 <h1>TECHNOLOGIES I HAVE WORKED ON</h1>
 <img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" alt="c lang" height="92px">
 <img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" alt="c++ lang"> 
@@ -140,7 +171,7 @@ border-collapse : collapse ;
 <h1>SOME QUOTES I LOVE</h1>
 <dl>
 <dt> I think it is possible for ordinary people to choose to be extraordinary. </dt>
-<dd><pre style="color: whitesmoke;">                                                     - Elon Musk  </pre></dd>
+<dd><pre style="color: whitesmoke; ">                                                     - Elon Musk  </pre></dd>
 <dt> Every pro was once an Amateur. Every expert was once a beginner. So dream big and start now </dt>
 <dd><pre style="color: whitesmoke;">                                                                     - Robin Sharma  </pre></dd>
 </dl>
