@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="typestyle.css">
+</head>
+<body >
+    <div class="maindiv">
+        <div class="centerdiv">
+            <h1 class="toptext">Welcome to Typing Speed test</h1>
+            <h3 id="msg"></h3><br>
+            
+            <textarea id="typewords" cols="110" rows="14" placeholder="Get Ready to Test your Typing Speed"></textarea><br>
+            <button id="btn">
+                Start
+            </button>
+
+        </div>
+    </div>
+<!-----------JS--------------->
+    <script>
+const setOfWords=[ 
+ "Hello and welcome to javascript typing speed test project.",
+ "My name is Prashant Sharma. I am web developer.",
+ "JS is a scripting language, primarily designed for adding interactivity to web pages and web applications.",
+ "JS was invented so a computing language could build web pages and applications more effectively.",
+ "JS was developed by Brendan Eich, the language was first implemented by Netscape communications crop in 1995."
+ ];
+
+ const msg=document.getElementById("msg");
+ const typewords=document.getElementById("typewords");
+ const btn=document.getElementById("btn");
+ let startTime, endTime;
+
+ const playGame = () => {
+
+     let randomNumber = Math.floor(Math.random()* setOfWords.length);
+     msg.innerText =setOfWords[randomNumber];
+
+     let date= new Date();
+     startTime = date.getTime();
+     btn.innerText= "Done";
+ }
+
+ const endGame = () => {
+     let date =new Date();
+     endTime = date.getTime();
+     let totalTime = ((endTime - startTime) / 1000);
+
+// to count the total words written
+     let totalStr= typewords.value;
+     let wordCount = wordCounter(totalStr);
+
+// to calculate the speed
+     let speed = Math.round((wordCount/totalTime) *60);
+
+// to show the final message
+     let finalMsg="You typed at total " + speed + " words per minute. ";
+     finalMsg += compareWords(msg.innerText, totalStr);
+     msg.innerText= finalMsg;
+
+ }
+
+ const wordCounter = (str) => {
+     let response = str.split(" ").length;
+     return response; 
+ }
+
+  const compareWords = (str1, str2) => {
+let words1= str1.split(" ");         // to seprate by space " "
+let words2= str2.split(" ");
+let cnt = 0;
+
+words1.forEach(function(item, index) {
+    if (item == words2[index]) {
+        cnt++;
+        }    
+    })
+    let errorWords = (words1.length - cnt);
+    return (cnt + " correct out of " + words1.length + " words and the total number of errors are " + errorWords + ".");
+
+ }
+
+ btn.addEventListener('click', function() {
+     if(this.innerText== "Start") {
+         typewords.disabled = false;
+         typewords.focus();
+         playGame();
+     }
+     else if(this.innerText== "Done"){
+         typewords.disabled = true;
+         btn.innerText= "Start";
+         endGame();
+     }
+ })
+
+    </script>
+</body>
+</html>
