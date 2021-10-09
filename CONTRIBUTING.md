@@ -7,3 +7,5 @@
 - [Aman Yadav](https://github.com/aman-netizen)
 - [Armaan Khan](https://github.com/Armaan2807)
 - [Mohit Patel](https://github.com/mohit2314)
+- [Valentina](https://github.com/vale-c)
+
