@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="calculator" name="calci">
+    <input class="value" name="text" type="txt" readonly="">
+    <span class="num clear" onclick="document.calci.text.value = ''">c</span>
+    <span class="num" onclick="document.calci.text.value += '/'">/</span>
+    <span class="num" onclick="document.calci.text.value += '*'">*</span>
+    <span class="num" onclick="document.calci.text.value += '7'">7</span>
+    <span class="num" onclick="document.calci.text.value += '8'">8</span>
+    <span class="num" onclick="document.calci.text.value += '9'">9</span>
+    <span class="num" onclick="document.calci.text.value += '-'">-</span>
+    <span class="num" onclick="document.calci.text.value += '4'">4</span>
+    <span class="num" onclick="document.calci.text.value += '5'">5</span>
+    <span class="num" onclick="document.calci.text.value += '6'">6</span>
+    <span class="num plus" onclick="document.calci.text.value += '+'">+</span>
+    <span class="num" onclick="document.calci.text.value += '3'">3</span>
+    <span class="num" onclick="document.calci.text.value += '2'">2</span>
+    <span class="num" onclick="document.calci.text.value += '1'">1</span>
+    <span class="num" onclick="document.calci.text.value += '0'">0</span>
+    <span class="num" onclick="document.calci.text.value += '00'">00</span>
+    <span class="num" onclick="document.calci.text.value += '.'">.</span>
+    <span class="num equal" onclick="document.calci.text.value = eval(calci.text.value)">=</span>
+    </form>
+
+</body>
+</html>
