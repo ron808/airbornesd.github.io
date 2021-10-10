@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style/sweetalert2.min.css">
+    <script src="../script/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/6d0f33542d.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interested Events</title>
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCJmwcDnlytyr6seElC8M_vmuFaLuS-iEs",
+            authDomain: "meetup-planner-eb2b5.firebaseapp.com",
+            databaseURL: "https://meetup-planner-eb2b5.firebaseio.com",
+            projectId: "meetup-planner-eb2b5",
+            storageBucket: "meetup-planner-eb2b5.appspot.com",
+            messagingSenderId: "187789885726"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a style="font-size:20px;" href="#" id="fullName" class="white-text brand-logo"></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <!-- <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Create Event <i class="material-icons left">add</i></a></li> -->
+                <li><a href="../dashboard/dash.html">Go To Dashboard</a></li>
+                <li><a href="../myevents/myevents.html">My Events</a></li>
+                <li><button class="waves-effect waves-light btn purple" type="button" onclick="logOut()">Log Out</a></li>
+                </ul>
+                
+                <ul class="side-nav" id="mobile-demo">
+                    <h3 class="purple-text darken-3 center-align">Meetup Planner</h3>
+                    <li><a href="../dashboard/dash.html">Go To Dashboard</a></li>
+                    <li><a href="../myevents/myevents.html">My Events</a></li>
+                    <!-- <li><a href="../myevents/myevents.html">My Events</a></li> -->
+                    <li><button class="waves-effect waves-light btn purple" type="button" onclick="logOut()">Log Out</button></li>
+                    <!-- <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Create Event<i class="white-text material-icons left">add</i></a></li> -->
+                </ul>
+            </div>
+        </nav>
+        
+        <div id="eventsPanel" class="container">
+                <h1 class="purple-text darken-3 center-align">Interested Events</h1>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="interest.js"></script>
+    <script src="../jquery.js"></script>
+</body>
+
+</html>

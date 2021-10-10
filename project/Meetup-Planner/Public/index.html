@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style/sweetalert2.min.css">
+    <script src="script/sweetalert2.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script src="https://use.fontawesome.com/6d0f33542d.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meetup Planner</title>
+</head>
+
+<body>
+<!--     
+<script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '344854079305983',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v2.10'
+          });
+          FB.AppEvents.logPageView();   
+        };
+      
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+ -->
+
+    <div class="container">
+        <h1 class="grey-text darken-3 center-align">Meetup Planner</h1>
+        <div class="row">
+            <div class="col s6 offset-s6">
+                <h1 class="blue-text text-darken-2">Sign Up</h1>
+                <div class="input-field col s12">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password (Must be 8 characters long)</label>
+                </div><br><br>
+                <p>
+                    <input class="with-gap" name="gender" type="radio" id="male" checked />
+                    <label for="male">Male</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="gender" type="radio" id="female" />
+                    <label for="female">Female</label>
+                </p>
+                <a onclick="signup()" class="waves-effect waves-light btn red"><i class="fa fa-user-plus"></i> Sign Up</a><br><br>
+                <!-- <a onclick="fbSignIn()" class="#4a148c purple waves-effect waves-light btn"><i class="fa fa-facebook"></i> Sign In With Facebook</a>
+                <a onclick="gSignIn()" class="black-text waves-effect waves-light btn white"><i class="fa fa-google"></i> Sign In With Google</a> -->
+                <h5 class="center-align">Already have an account ?</h5>
+                <a class="waves-effect waves-light btn login" href="login/login.html">Log In</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script src="script/app.js"></script>
+</body>
+
+</html>
