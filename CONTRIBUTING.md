@@ -8,3 +8,4 @@
 - [Armaan Khan](https://github.com/Armaan2807)
 - [Mohit Patel](https://github.com/mohit2314)
 - [Huzaifa Ahmed](https://github.com/Huzaifaahmed20)
+- [Valentina](https://github.com/vale-c)
