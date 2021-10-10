@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  background-image: url("assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+
+  font-family: "Nunito", sans-serif;
+}
+
+.container h1 {
+  text-align: center;
+  margin: 1em 0 0.5em 0;
+  color: #746464;
+  font-weight: normal;
+  font-family: "Ultra", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 2px white, 0 3px #777;
+}
+
+.container .inputData {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.container .inputData input[type="text"] {
+  margin-left: 1%;
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.container .inputData button {
+  display: block;
+  margin: auto;
+  margin-top: 27px;
+  background: #1aab8a;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 40px;
+  font-size: 20px;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+.container .inputData button:hover {
+  background: inherit;
+  color: #1aab8a;
+}
+
+.container .inputData button:before,
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1aab8a;
+  transition: 400ms ease all;
+}
+.container .inputData button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.container .inputData button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+.container .multiplicationTable {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 2;
+}
