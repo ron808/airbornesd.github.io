@@ -1,0 +1,44 @@
+.abc {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: example 4s linear 0s infinite ;
+}
+.abd {
+    position: relative;
+    bottom: 20px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: example1 4s linear s infinite alternate;
+}
+
+
+@keyframes example {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  75% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes example1 {
+0% {
+    width: 0;
+  }
+    25% {
+    width: 0;
+  }
+  75% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
